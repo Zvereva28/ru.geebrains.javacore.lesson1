@@ -1,6 +1,6 @@
 package sh;
 
 public interface Difficulty {
-    void difficulty(Moving one);
+    boolean difficulty(Moving one);
 
 }

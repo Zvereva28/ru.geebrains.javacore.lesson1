@@ -12,7 +12,7 @@ public class Main {
         System.out.println("+++++++++++++++++++++++++++++++");
 
         Moving moving[] = new Moving[6];
-        moving[0] = new Bot ("Ibot", 32, 5);
+        moving[0] = new Bot ("Ibot", 55, 5);
         moving[1] = new Cat ("Murza", 3, 1);
         moving[2] = new Man ("Kola", 10, 1);
         moving[3] = new Man ("Lena", 5, 0);
@@ -26,7 +26,7 @@ public class Main {
 
         for (int i = 0; i < 6; i++ ){
             for (int j = 0; j < 3; j++){
-                dif[j].difficulty(moving[i]);
+                if (dif[j].difficulty(moving[i]) == false) break;
 
             }
         }

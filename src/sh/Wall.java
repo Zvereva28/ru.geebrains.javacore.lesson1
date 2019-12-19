@@ -11,7 +11,6 @@ public class Wall implements Difficulty {
 
 
     @Override
-    public void difficulty(Moving one) {
-        one.jump(this);
-    }
+    public boolean difficulty(Moving one) {
+       return one.jump(this);}
 }

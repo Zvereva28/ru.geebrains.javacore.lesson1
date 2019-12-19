@@ -10,8 +10,8 @@ public class Track implements Difficulty {
     }
 
     @Override
-    public void difficulty(Moving one) {
-        one.run(this);
+    public boolean difficulty(Moving one) {
+        return one.run(this);
 
     }
 
